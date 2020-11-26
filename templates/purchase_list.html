@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Lista de compras</h1>
+
+
+<div class="panel-body">
+    <table class="table table-bordered table-hover table-striped table-condesed" id="product_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in purchases %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.product}}</td>
+                <td>{{item.amount}}</td>
+                <td>{{item.price}}</td>
+            </tr>
+            {% endfor %}
+
+
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}

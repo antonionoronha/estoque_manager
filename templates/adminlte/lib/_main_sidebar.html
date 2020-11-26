@@ -1,0 +1,24 @@
+{% extends 'adminlte/lib/_main_sidebar.html' %}
+
+{% block nav_links %}
+<li>
+    <a href="/product/create">
+        <i class="fa fa-user"></i> <span>Cadastrar produtos</span>
+    </a>
+</li>
+<li>
+    <a href="/product/list">
+        <i class="fa fa-list"></i> <span>Listar produtos</span>
+    </a>
+</li>
+<li>
+    <a href="/purchase/list">
+        <i class="fa fa-list"></i> <span>Listar compras</span>
+    </a>
+</li>
+<li>
+    <a href="/purchase/create">
+        <i class="fa fa-shopping-cart"></i><span>Inserir compra</span>
+    </a>
+</li>
+{% endblock nav_links %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<h1>Criar novo produto</h1>
+<div>
+
+    <form action="" method="post" autocomplete="off">
+        {% csrf_token %}
+        {{ form.name|as_crispy_field }}
+
+        <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Salvar </button>
+
+    </form>
+</div>
+
+
+{% endblock %}
